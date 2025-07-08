@@ -17,7 +17,7 @@
 import axios from "axios";
 
 export const axiosClient = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BASE_URL, // ✅ Dynamic base URL
+  baseURL: `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1`, // ✅ Dynamic base URL
   headers: {
     "Content-Type": "application/json",
   },
